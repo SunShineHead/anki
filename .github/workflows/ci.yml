@@ -153,7 +153,7 @@ jobs:
         uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3 #v4
 
       - name: Install cargo-llvm-cov and cargo-nextest
-        uses: taiki-e/install-action@b80e2bb2635f28eb98b9fce1e2f0887e1535c6b2 #v2.90.0
+        uses: taiki-e/install-action@4a76afe23f9e08d2d9550fb56e556444e8611d21 #v2.90.4
         with:
           tool: |
             cargo-llvm-cov@0.8.4
@@ -193,7 +193,7 @@ jobs:
 
       - name: Upload SARIF results for complexipy
         if: steps.complexipy.outcome == 'failure'
-        uses: github/codeql-action/upload-sarif@fbfa9f37476c0024508d051f3c34fcca3366b0e2 #v4
+        uses: github/codeql-action/upload-sarif@38112626f97ac1fd7acf3df7ebca51f4677c1b38 #v4
         with:
             sarif_file: out/complexipy/complexipy-results.sarif
             category: complexipy
@@ -309,7 +309,7 @@ jobs:
         uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3 #v4
 
       - name: Install cargo-llvm-cov and cargo-nextest
-        uses: taiki-e/install-action@b80e2bb2635f28eb98b9fce1e2f0887e1535c6b2 #v2.90.0
+        uses: taiki-e/install-action@4a76afe23f9e08d2d9550fb56e556444e8611d21 #v2.90.4
         with:
           tool: |
             cargo-llvm-cov@0.8.4
@@ -384,7 +384,7 @@ jobs:
         uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3 #v4
 
       - name: Install cargo-llvm-cov and cargo-nextest
-        uses: taiki-e/install-action@b80e2bb2635f28eb98b9fce1e2f0887e1535c6b2 #v2.90.0
+        uses: taiki-e/install-action@4a76afe23f9e08d2d9550fb56e556444e8611d21 #v2.90.4
         with:
           tool: |
             cargo-llvm-cov@0.8.4
@@ -458,7 +458,7 @@ jobs:
         uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3 #v4
 
       - name: Install cargo-llvm-cov and cargo-nextest
-        uses: taiki-e/install-action@b80e2bb2635f28eb98b9fce1e2f0887e1535c6b2 #v2.90.0
+        uses: taiki-e/install-action@4a76afe23f9e08d2d9550fb56e556444e8611d21 #v2.90.4
         with:
           tool: |
             cargo-llvm-cov@0.8.4
@@ -542,7 +542,7 @@ jobs:
         uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3 #v4
 
       - name: Install cargo-llvm-cov and cargo-nextest
-        uses: taiki-e/install-action@b80e2bb2635f28eb98b9fce1e2f0887e1535c6b2 #v2.90.0
+        uses: taiki-e/install-action@4a76afe23f9e08d2d9550fb56e556444e8611d21 #v2.90.4
         with:
           tool: |
             cargo-llvm-cov@0.8.4
@@ -617,7 +617,7 @@ jobs:
         uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3 #v4
 
       - name: Install cargo-llvm-cov and cargo-nextest
-        uses: taiki-e/install-action@b80e2bb2635f28eb98b9fce1e2f0887e1535c6b2 #v2.90.0
+        uses: taiki-e/install-action@4a76afe23f9e08d2d9550fb56e556444e8611d21 #v2.90.4
         with:
           tool: |
             cargo-llvm-cov@0.8.4
