@@ -1,0 +1,33 @@
+name: uv debug
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - uv.lock
+      - pyproject.toml
+      - justfile
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+
+      - uses: extractions/setup-just@v2
+
+      - name: Inspect lock entries
+        run: |
+          grep -n -A12 'name = "ast-serialize"' uv.lock || true
+          grep -n -A8 'name = "types-pywin32"' uv.lock || true
+
+      - name: Check lock is in sync with pyproject.toml
+        run: uv lock --check
+
+      - name: Show build recipe
+        run: sed -n '1,20p' justfile
+
+      - name: Run build
+        run: just build
