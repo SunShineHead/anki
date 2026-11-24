@@ -799,7 +799,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/sourcemap-codec@npm:^1.6.0":
+"@jridgewell/sourcemap-codec@npm:^1.5.5, @jridgewell/sourcemap-codec@npm:^1.6.0":
   version: 1.6.0
   resolution: "@jridgewell/sourcemap-codec@npm:1.6.0"
   checksum: 10c0/b5be700e45a775f218589c3466c4ffea630582b4988657652da464e5ab8a7d18bf928ee4fd2363fb346ede4bea9c6ff0bae05a538358c4565ece6199531b5f72
@@ -1101,32 +1101,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rolldown/pluginutils@npm:^1.0.1":
-  version: 1.1.1
-  resolution: "@rolldown/pluginutils@npm:1.1.1"
-  checksum: 10c0/ee35ab757a5b6cc296a13abfd3b1f998ef141a6bf302f2d25eee53ab9cb1aea265bea0d55495664f02e91c38c3995c79773ea8e14213089d9c31c1821997b606
-  languageName: node
-  linkType: hard
-
-"@rollup/pluginutils@npm:^5.1.0":
-  version: 5.1.3
-  resolution: "@rollup/pluginutils@npm:5.1.3"
-  dependencies:
-    "@types/estree": "npm:^1.0.0"
-    estree-walker: "npm:^2.0.2"
-    picomatch: "npm:^4.0.2"
-  peerDependencies:
-    rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-  peerDependenciesMeta:
-    rollup:
-      optional: true
-  checksum: 10c0/ba46ad588733fb01d184ee3bc7a127d626158bc840b5874a94c129ff62689d12f16f537530709c54da6f3b71f67d705c4e09235b1dc9542e9d47ee8f2d0b8b9e
-  languageName: node
-  linkType: hard
-
-"@rollup/rollup-android-arm-eabi@npm:4.59.0":
-  version: 4.59.0
-  resolution: "@rollup/rollup-android-arm-eabi@npm:4.59.0"
+"@rolldown/binding-android-arm-eabi@npm:1.2.16":
+  version: 1.2.16
+  resolution: "@rolldown/binding-android-arm-eabi@npm:1.2.16"
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
@@ -1273,7 +1250,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/acorn-typescript@npm:^1.0.10":
+"@sveltejs/acorn-typescript@npm:^1.0.13":
   version: 1.0.13
   resolution: "@sveltejs/acorn-typescript@npm:1.0.13"
   peerDependencies:
@@ -1282,12 +1259,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-static@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "@sveltejs/adapter-static@npm:4.0.1"
+"@sveltejs/adapter-static@npm:^3.0.10":
+  version: 3.0.11
+  resolution: "@sveltejs/adapter-static@npm:3.0.11"
   peerDependencies:
-    "@sveltejs/kit": ^3.0.0-next.0
-  checksum: 10c0/077c13ad020826439b50cdcb6751fbba2e4e9bf5864b4e8424fabb8b7a03f34cdc73b41bef5528443ed3f81816c8303a60321552789cf995f876111e2a261b7c
+    "@sveltejs/kit": ^2.0.0
+  checksum: 10c0/94703f08142a92b5e29dffc1d65a59a399c66ac777bd2137972515cbd488ab2550265de1cddaab6486b73421956ba831a595347e10bc70e41306bb6d41434991
   languageName: node
   linkType: hard
 
@@ -1327,18 +1304,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte@npm:^7.0.0":
-  version: 7.3.1
-  resolution: "@sveltejs/vite-plugin-svelte@npm:7.3.1"
+"@sveltejs/vite-plugin-svelte-inspector@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@sveltejs/vite-plugin-svelte-inspector@npm:4.0.1"
   dependencies:
-    deepmerge: "npm:^4.3.1"
-    magic-string: "npm:^1.0.0"
-    obug: "npm:^2.1.0"
-    vitefu: "npm:^1.1.2"
+    debug: "npm:^4.3.7"
   peerDependencies:
-    svelte: ^5.46.4
-    vite: ^8.0.0-beta.7 || ^8.0.0
-  checksum: 10c0/bdc2476fdf27d6f4fc54acf8df3b7f59d76b086c4696dd3d7c6bebab9ea2fd2b5a3084e83f635221d8f4a02b0040d714ab9755af863dae31508e4dac5315d03b
+    "@sveltejs/vite-plugin-svelte": ^5.0.0
+    svelte: ^5.0.0
+    vite: ^6.0.0
+  checksum: 10c0/03cc334346fcf291d3d0cba435bf752d15df91c0ac55dccdb5bf1372ae5a85fcb25f0f63ca3d1f7a25ebaa9e711fd1178d8a1fd6f495d57ac2eb327b855c0aea
+  languageName: node
+  linkType: hard
+
+"@sveltejs/vite-plugin-svelte@npm:5.1":
+  version: 5.1.1
+  resolution: "@sveltejs/vite-plugin-svelte@npm:5.1.1"
+  dependencies:
+    "@sveltejs/vite-plugin-svelte-inspector": "npm:^4.0.1"
+    debug: "npm:^4.4.1"
+    deepmerge: "npm:^4.3.1"
+    kleur: "npm:^4.1.5"
+    magic-string: "npm:^0.30.17"
+    vitefu: "npm:^1.0.6"
+  peerDependencies:
+    svelte: ^5.0.0
+    vite: ^6.0.0
+  checksum: 10c0/a8ca872c07180ac0676d54243ba0bd47690ad07933abe5c02732bdd286b31a27370e1ed67f07b4de012aea0b7c8d12d67a3c48d0567b18af67dc5adebea6859a
   languageName: node
   linkType: hard
 
@@ -2078,7 +2070,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.18.0":
+"acorn@npm:^8.18.0, acorn@npm:^8.5.0, acorn@npm:^8.9.0":
   version: 8.19.0
   resolution: "acorn@npm:8.19.0"
   bin:
@@ -3225,6 +3217,18 @@ __metadata:
   dependencies:
     ms: "npm:^2.1.1"
   checksum: 10c0/37d96ae42cbc71c14844d2ae3ba55adf462ec89fd3a999459dec3833944cd999af6007ff29c780f1c61153bcaaf2c842d1e4ce1ec621e4fc4923244942e4a02a
+  languageName: node
+  linkType: hard
+
+"debug@npm:^4.3.7, debug@npm:^4.4.1":
+  version: 4.4.3
+  resolution: "debug@npm:4.4.3"
+  dependencies:
+    ms: "npm:^2.1.3"
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 10c0/d79136ec6c83ecbefd0f6a5593da6a9c91ec4d7ddc4b54c883d6e71ec9accb5f67a1a5e96d00a328196b5b5c86d365e98d8a3a70856aaf16b4e7b1985e67f5a6
   languageName: node
   linkType: hard
 
@@ -4972,13 +4976,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ip-address@npm:^9.0.5":
-  version: 9.0.5
-  resolution: "ip-address@npm:9.0.5"
-  dependencies:
-    jsbn: "npm:1.1.0"
-    sprintf-js: "npm:^1.1.3"
-  checksum: 10c0/331cd07fafcb3b24100613e4b53e1a2b4feab11e671e655d46dc09ee233da5011284d09ca40c4ecbdfe1d0004f462958675c224a804259f2f78d2465a87824bc
+"ip-address@npm:^10.1.1":
+  version: 10.7.6
+  resolution: "ip-address@npm:10.7.6"
+  checksum: 10c0/b1877874793345a00ef46877e18b8ff38d91ce4d07195f8e26d1381a0248b296cfad73e2ec1ba7c5c39e347d365971e036fbb6ffbc672b7d3f0d9648ed2fafa5
   languageName: node
   linkType: hard
 
@@ -5461,13 +5462,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsbn@npm:1.1.0":
-  version: 1.1.0
-  resolution: "jsbn@npm:1.1.0"
-  checksum: 10c0/4f907fb78d7b712e11dea8c165fe0921f81a657d3443dde75359ed52eb2b5d33ce6773d97985a089f09a65edd80b11cb75c767b57ba47391fee4c969f7215c96
-  languageName: node
-  linkType: hard
-
 "jsdom@npm:^19.0.0":
   version: 19.0.0
   resolution: "jsdom@npm:19.0.0"
@@ -5553,6 +5547,13 @@ __metadata:
   dependencies:
     json-buffer: "npm:3.0.1"
   checksum: 10c0/aa52f3c5e18e16bb6324876bb8b59dd02acf782a4b789c7b2ae21107fab95fab3890ed448d4f8dba80ce05391eeac4bfabb4f02a20221342982f806fa2cf271e
+  languageName: node
+  linkType: hard
+
+"kleur@npm:^4.1.5":
+  version: 4.1.5
+  resolution: "kleur@npm:4.1.5"
+  checksum: 10c0/e9de6cb49657b6fa70ba2d1448fd3d691a5c4370d8f7bbf1c2f64c24d461270f2117e1b0afe8cb3114f13bbd8e51de158c2a224953960331904e636a5e4c0f2a
   languageName: node
   linkType: hard
 
@@ -5788,7 +5789,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.30.21":
+"magic-string@npm:^0.30.17, magic-string@npm:^0.30.21":
   version: 0.30.21
   resolution: "magic-string@npm:0.30.21"
   dependencies:
@@ -5806,9 +5807,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magicast@npm:^0.3.5":
-  version: 0.3.5
-  resolution: "magicast@npm:0.3.5"
+"magicast@npm:^0.5.2":
+  version: 0.5.5
+  resolution: "magicast@npm:0.5.5"
   dependencies:
     "@babel/parser": "npm:^7.29.7"
     "@babel/types": "npm:^7.29.7"
@@ -6301,7 +6302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"obug@npm:^2.1.0, obug@npm:^2.1.1":
+"obug@npm:^2.1.1":
   version: 2.2.1
   resolution: "obug@npm:2.2.1"
   checksum: 10c0/8a7c001847d880fa6ba83c7bbee6a80fd271ee628439cd508c8647d53b217abb1759e2d5e4aaeb09a35d0a274bdb225a0a5a78eded3213d63e656153cf411b63
@@ -7239,12 +7240,12 @@ __metadata:
   linkType: hard
 
 "socks@npm:^2.8.3":
-  version: 2.8.3
-  resolution: "socks@npm:2.8.3"
+  version: 2.8.10
+  resolution: "socks@npm:2.8.10"
   dependencies:
-    ip-address: "npm:^9.0.5"
+    ip-address: "npm:^10.1.1"
     smart-buffer: "npm:^4.2.0"
-  checksum: 10c0/d54a52bf9325165770b674a67241143a3d8b4e4c8884560c4e0e078aace2a728dffc7f70150660f51b85797c4e1a3b82f9b7aa25e0a0ceae1a243365da5c51a7
+  checksum: 10c0/9ac7f4329ed064585975206d9582119a1f168b249dd6119a939f839e0ea7a590d4fdccff9a4112f13b478177207959096f70224f021eaeb3ce69bc8129f80ef4
   languageName: node
   linkType: hard
 
@@ -7322,13 +7323,6 @@ __metadata:
     spdx-expression-parse: "npm:^3.0.0"
     spdx-ranges: "npm:^2.0.0"
   checksum: 10c0/47bf163108e64fe4c179a5e2f8dc5fd4ece1665739fc61eae3157a9d4b9b2eb389df7f645223192557659155dda9071ceaa3dfd06ecab65cc3862032c20f2e61
-  languageName: node
-  linkType: hard
-
-"sprintf-js@npm:^1.1.3":
-  version: 1.1.3
-  resolution: "sprintf-js@npm:1.1.3"
-  checksum: 10c0/09270dc4f30d479e666aee820eacd9e464215cdff53848b443964202bf4051490538e5dd1b42e1a65cf7296916ca17640aebf63dae9812749c7542ee5f288dec
   languageName: node
   linkType: hard
 
@@ -8113,15 +8107,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitefu@npm:^1.1.2":
-  version: 1.1.3
-  resolution: "vitefu@npm:1.1.3"
+"vitefu@npm:^1.0.6":
+  version: 1.1.4
+  resolution: "vitefu@npm:1.1.4"
   peerDependencies:
     vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
   peerDependenciesMeta:
     vite:
       optional: true
-  checksum: 10c0/6cfcd52a17339f63f71ef08787a68850a17a9d9dd7a688e29e41067f963eb2cd5192bb65d38df87fa3a733a21e0229aaa6382201655c1599699e5d6669e3e094
+  checksum: 10c0/98d6eaf60463f429f3f112ebf74c1f14ff794fae83bcf105e9efc476d8737de33eaa555b4ebd9a9a0fc6da691430ae92e55b90235bada3429ca9b02c0b35b9dc
   languageName: node
   linkType: hard
 
